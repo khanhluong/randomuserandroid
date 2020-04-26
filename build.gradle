@@ -1,0 +1,76 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.72'
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+
+    //sdk
+    minSdkVersion = 14
+    targetSdkVersion = 29
+    compileSdkVersion = 29
+    buildToolsVersion = '29.0.3'
+
+    // App dependence
+    androidXVersion = '1.0.0'
+    androidXTestVersion = '1.1.1'
+    androidXAnnotations = '1.0.1'
+    androidXLegacySupport = '1.0.0'
+    materialVersion = '1.1.0'
+    cardVersion = '1.0.0'
+    recyclerViewVersion = '1.1.0'
+    appCompatVersion = '1.1.0'
+    daggerVersion = '2.27'
+
+    //testing
+    junitVersion = '4.12'
+    mockitoVersion = '2.8.9'
+    mockitoCoreVersion = '3.3.3'
+    coreTestingVersion = '1.1.1'
+    testRunnerVersion = '1.0.2'
+    testRulesVersion = '1.0.2'
+    espressoCoreVersion = '3.0.2'
+
+    //db
+    roomVersion = '2.0.0'
+
+
+    //loading image
+    glideVersion = '4.10.0'
+    //circle image view
+    circleImageViewVersion = '3.1.0'
+
+    appcompatVersion = '1.1.0'
+
+    coreKtxVersion = '1.2.0'
+    constraintlayoutVersion = "1.1.3"
+
+    //retrofit
+    retrofitVersion = '2.7.2'
+    loggingInterceptorVersion = '4.5.0'
+}

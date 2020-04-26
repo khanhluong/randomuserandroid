@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Random User</string>
+    <string name="list_tiler">Filter</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="filter">Filter Random user by Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="preference_file_key">share</string>
+    <string name="full_name">Full Name</string>
+</resources>
