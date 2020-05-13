@@ -1,4 +1,4 @@
-# randomuserandroid
+# Random User Android
 Load Random User from https://randomuser.me/
 Apply android architecture.
 
